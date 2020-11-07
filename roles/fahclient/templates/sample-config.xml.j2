@@ -10,7 +10,7 @@
     in quotes below.
   -->
 
-  <!-- User Information -->
+  <!-- User YYYYYYYYY Information -->
   <user value="{{ username }}"/> <!-- Enter your user name here -->
   <team value="{{ team }}"/>         <!-- Your team number -->
   <passkey value="{{ passkey }}"/>       <!-- 32 hexadecimal characters if provided -->
@@ -66,4 +66,13 @@
 
     Where y.y.y.y is the IP address of this computer.
   -->
+
+  <!-- Set these due to container image defaults -->
+  <log-to-screen v='true'/>
+  <log v='/var/lib/fahclient/log.txt'/>
+  <log-rotate-dir v='/var/lib/fahclient/logs'/>
+
+  <data-directory v='/var/lib/fahclient'/>
+  <exec-directory v='/usr/bin'/>
+
 </config>
